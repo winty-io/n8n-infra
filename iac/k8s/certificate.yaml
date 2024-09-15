@@ -4,7 +4,7 @@ metadata:
   name: n8n-cert
   namespace: n8n
 spec:
-  secretName: n8n-tls
+  secretName: n8n-tls-secret
   dnsNames:
   - n8n.winty.server
   issuerRef:

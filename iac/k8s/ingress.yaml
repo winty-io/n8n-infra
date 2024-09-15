@@ -10,7 +10,7 @@ spec:
   tls:
   - hosts:
     - n8n.winty.server
-    secretName: n8n-tls
+    secretName: n8n-tls-secret
   rules:
   - host: n8n.winty.server
     http:
