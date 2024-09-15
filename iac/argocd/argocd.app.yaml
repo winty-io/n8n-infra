@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: n8n
+spec:
+  destination:
+    name: ''
+    namespace: n8n
+    server: https://kubernetes.default.svc
+  source:
+    path: ./iac/k8s
+    repoURL: https://github.com/winty-io/n8n-infra
+    targetRevision: HEAD
+    directory:
+      recurse: false
+  sources: []
+  project: default
+  syncPolicy:
+    automated: null
