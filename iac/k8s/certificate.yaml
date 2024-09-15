@@ -6,7 +6,7 @@ metadata:
 spec:
   secretName: n8n-tls
   dnsNames:
-  - n8n.winty.cloud
+  - n8n.winty.server
   issuerRef:
-    name: letsencrypt-prod
-    kind: ClusterIssuer
+    name: selfsigned-issuer
+    kind: Issuer
