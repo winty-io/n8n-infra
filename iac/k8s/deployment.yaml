@@ -32,9 +32,9 @@ spec:
               name: n8n-secret
               key: N8N_BASIC_AUTH_PASSWORD
         - name: N8N_HOST
-          value: "n8n.winty.cloud"
+          value: "n8n.winty.server"
         - name: WEBHOOK_URL
-          value: "https://n8n.winty.cloud/"
+          value: "https://n8n.winty.server/"
         resources:
           limits:
             cpu: "0.250"
